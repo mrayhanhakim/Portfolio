@@ -38,29 +38,7 @@ button.nav-link:hover {
 }
 /** - END - **/
 
-/** - START - Footer Styling **/
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 18pt;
-  bottom: 0;
-  width: 100%;
-  padding: 10px 0;
-  background-color: white;
-}
-
-a.footer-link {
-  text-decoration: none;
-  color: black;
-  margin: 10pt 14pt;  
-}
-
-#footer-osu { font-size: 16pt; }
-/** - END - **/
-
 /** - START - Body Styling **/
 .active { display: block !important; }
 .content { display: none; }
-/* .sticky { position: fixed; } */
 /** - END - **/
