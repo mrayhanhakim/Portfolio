@@ -16,25 +16,39 @@ nav {
   background-color: white;
 }
 
-#nav-button-right {
+
+#nav-button-right { 
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
 }
 
-button.nav-link {
+#nav-button-right .nav-link { display: none; }
+
+button.nav-link, #nav-toggle {
   margin: 16px 14px;
   text-decoration: none;
   color: black;
-  font-size: 16pt;
+  font-size: 14pt;
   outline: none;
   border: none;
-  background-color: rgba(0, 0, 0, 0)
+  background-color: rgba(0, 0, 0, 0);
 }
 
 button.nav-link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#nav-toggle { 
+  display: block;
+  background-color: white; 
+}
+
+@media only screen and (min-width: 1024px) {
+  button.nav-link { font-size: 16pt; }
+  #nav-button-right .nav-link { display: block; }
+  #nav-toggle { display: none; }
 }
 /** - END - **/
 
