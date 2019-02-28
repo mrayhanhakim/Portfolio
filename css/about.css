@@ -11,6 +11,7 @@
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 #profile-name, #profile-contact, #summary { font-family: 'PT Sans', sans-serif }
@@ -20,6 +21,8 @@
   justify-content: center;
   flex-direction: column;
   padding: 16px;
+  background-color: white;
+  width: 85%;
 }
 
 #profile-photo {
@@ -41,15 +44,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-top: 2px solid black;
 }
 
 #summary {
-  padding: 10px;
-  width: 100%;
+  padding: 10px 18px;
   font-size: 14pt;
+  background-color: white;
+  margin-bottom: 10px;
+  width: 85%;
 }
 
-@media only screen and (min-width: 768px) {
+#profile, #summary { 
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 1024px) {
   #about-wrap {
     position: relative;
     top: 50%;
@@ -58,15 +70,14 @@
     padding: 0;
     align-items: stretch;
   }
-  
-  #profile-name, #summary { margin: 0 16px; }
+
+  #profile { width: auto; }  
+  #profile, #summary { margin: 0 18px; }
 
   #profile-photo {
     width: 200px;
     height: 200px;
   }
-
-  #profile-contact { padding: 17px; }
 
   #summary { width: 30%; }
 }

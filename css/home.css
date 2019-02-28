@@ -10,7 +10,12 @@
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
   font-family: 'Pacifico', cursive;
-  font-size: 30pt;
+  font-size: 35pt;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15px 0;
+  width: 80%;
+  border-radius: 20px;
 }
 
 @media only screen and (min-width: 768px) {

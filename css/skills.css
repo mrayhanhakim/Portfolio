@@ -5,27 +5,33 @@
 }
 
 #skills-wrap {
-  position: static;
-  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 59px;
   font-family: 'PT Sans', sans-serif;
+  background-color: white;
+  width: 80%;
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .skills-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
   display: flex;
   align-items: center;
-  padding: 20px 0;
   flex-wrap: wrap;
 }
 
 .skill-title {
   display: inline-block;
-  width: 10%;
+  width: 15%;
   font-size: 16pt;
 }
 
@@ -38,23 +44,19 @@
 
 .skill-bar > div {
   padding: 20px;
-  background-color: cyan;
+  background-color: #dee0df;
   display: block;
   border-radius: 100px;
 }
 
-.skills-container:nth-child(1) > .skill-bar div { width: 80%; }
-.skills-container:nth-child(2) > .skill-bar div { width: 90%; }
-.skills-container:nth-child(3) > .skill-bar div { width: 70%; }
+.skills-container:nth-child(1) > .skill-bar div { width: 70%; }
+.skills-container:nth-child(2) > .skill-bar div { width: 80%; }
+.skills-container:nth-child(3) > .skill-bar div { width: 60%; }
 
-@media only screen and (min-width: 1024px) {
-  #skills-wrap {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    padding: 0;
-  }
-
-  .skill-bar { width: 85%; }
+@media only screen and (min-width: 1235px) {
+  .skill-bar { width: 84.8%; }
+  .skills-container { margin: 30px auto; }
+  .skills-container:nth-child(1) > .skill-bar div { width: 80%; }
+  .skills-container:nth-child(2) > .skill-bar div { width: 90%; }
+  .skills-container:nth-child(3) > .skill-bar div { width: 70%; }
 }
