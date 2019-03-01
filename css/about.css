@@ -47,6 +47,14 @@
   border-top: 2px solid black;
 }
 
+.contact-info a:link, .contact-info a:visited {
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-info a:hover { color: rgba(0, 0, 0, 0.5); }
+
 #summary {
   padding: 10px 18px;
   font-size: 14pt;
