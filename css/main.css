@@ -20,6 +20,7 @@ nav {
   display: inline-flex;
   background-color: white;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 #nav-button-right { 
@@ -64,13 +65,23 @@ button.nav-link:hover, #nav-toggle {
 /** - END - **/
 
 /** - START - Body Styling **/
-.active { display: block !important; }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 100; }
+}
+
+.active { 
+  display: block !important;
+  animation: fadeIn 0.5s linear;
+}
+
 .active-nav { text-decoration: underline !important; }
 .content { display: none; }
+
 .drop { 
   display: flex !important;
   position: absolute;
-  top: 56px;
+  top: 59px;
   width: 100%;
   z-index: 1;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);

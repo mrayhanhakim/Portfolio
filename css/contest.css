@@ -48,7 +48,7 @@
   border-bottom: 2px solid black;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   #contest-wrap {
     position: relative;
     flex-direction: row;

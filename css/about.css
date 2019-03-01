@@ -61,7 +61,7 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) {
   #about-wrap {
     position: relative;
     top: 50%;

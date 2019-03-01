@@ -42,21 +42,21 @@
   border-radius: 100px;
 }
 
-.skill-bar > div {
+.skill-percent {
   padding: 20px;
   background-color: #dee0df;
   display: block;
   border-radius: 100px;
 }
 
-.skills-container:nth-child(1) > .skill-bar div { width: 70%; }
-.skills-container:nth-child(2) > .skill-bar div { width: 80%; }
-.skills-container:nth-child(3) > .skill-bar div { width: 60%; }
+.skills-container:nth-child(1) > .skill-bar .skill-percent { width: 70%; }
+.skills-container:nth-child(2) > .skill-bar .skill-percent { width: 80%; }
+.skills-container:nth-child(3) > .skill-bar .skill-percent { width: 60%; }
 
 @media only screen and (min-width: 1235px) {
   .skill-bar { width: 84.8%; }
   .skills-container { margin: 30px auto; }
-  .skills-container:nth-child(1) > .skill-bar div { width: 80%; }
-  .skills-container:nth-child(2) > .skill-bar div { width: 90%; }
-  .skills-container:nth-child(3) > .skill-bar div { width: 70%; }
+  .skills-container:nth-child(1) > .skill-bar .skill-percent { width: 80%; }
+  .skills-container:nth-child(2) > .skill-bar .skill-percent { width: 90%; }
+  .skills-container:nth-child(3) > .skill-bar .skill-percent { width: 70%; }
 }
